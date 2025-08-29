@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ePortfolio • Web Development</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="index.html">Sahir's Web Dev ePortfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="fullstack.html">Full Stack</a></li>
+        <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+        <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+        <li class="nav-item"><a class="nav-link" href="bs.html">Bootstrap</a></li>
+        <li class="nav-item"><a class="nav-link" href="js.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container py-5">
+  <h1 class="mb-3">Bootstrap: Grid, Cards & Modal</h1>
+  <p>Below is a responsive grid of books using Bootstrap’s <code>row</code> and <code>col</code> classes. Resize the window to see the layout adapt.</p>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mt-1" id="agatha">
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title h5">The Mysterious Affair at Styles</h3>
+          <p class="card-text">Poirot’s debut — tight plotting and classic misdirection.</p>
+          <span class="badge text-bg-secondary">Agatha Christie</span>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title h5">Murder on the Orient Express</h3>
+          <p class="card-text">A luxury train, a locked‑room feel, and a famous solution.</p>
+          <span class="badge text-bg-secondary">Agatha Christie</span>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title h5">And Then There Were None</h3>
+          <p class="card-text">Ten strangers on an island — pure suspense.</p>
+          <span class="badge text-bg-secondary">Agatha Christie</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#donationModal">
+      About my annual book donations
+    </button>
+  </div>
+
+  <div class="modal fade" id="donationModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Ujamma Café, Sankhamul</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Each year I donate a couple of finished books to <strong>Ujamma Café</strong> in Sankhamul, Kathmandu — a cozy spot known for its coffee and community library. It’s a small habit that keeps good stories moving.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="mt-5 py-4 bg-light border-top">
+  <div class="container small text-muted">
+    <div class="row gy-2 align-items-center">
+      <div class="col">© 2025 • Student ePortfolio (University of Sunderland)</div>
+      <div class="col text-end">Some of the books I finish find a second life at <strong>Ujamma Café</strong>, Sankhamul — a lovely corner in Kathmandu for coffee, conversations, and shared reads.</div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
